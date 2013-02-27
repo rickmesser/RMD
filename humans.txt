@@ -3,11 +3,13 @@
 
 # TEAM
 
-    <name>Rick -- <role> -- <twitter>
+    Rick Messer -- Designer, Developer -- @rickmesser
 
 # THANKS
 
-    <name>
+    Paul Irish & HTML5 Boilerplate
+    @mdo & @fat for the glory of Twitter Bootstrap
+    @monkeydobiz for HTML5 Reset
 
 # TECHNOLOGY COLOPHON
 
