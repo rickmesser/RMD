@@ -17,14 +17,16 @@
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 @font-face {
-    font-family: '../fonts/BLOKKNeue-Regular';
-    src: url('../fonts/BLOKKNeue-Regular.eot');
-    src: url('../fonts/BLOKKNeue-Regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/BLOKKNeue-Regular.woff') format('woff'),
-         url('../fonts/BLOKKNeue-Regular.svg#../fonts/BLOKKNeue-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'RMD';
+	src:url('../fonts/RMD.eot');
+	src:url('../fonts/RMD.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/RMD.woff') format('woff'),
+		url('../fonts/RMD.ttf') format('truetype'),
+		url('../fonts/RMD.svg#RMD') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
+
 body {
 	background: @darkBg;
 }
@@ -41,6 +43,9 @@ header[role="banner"] {
 // }
 .center-text {
 	text-align: center;
+}
+#intro {
+	padding-top: 70px;
 }
 #brand {
 	img.logo {
@@ -62,12 +67,9 @@ header[role="banner"] {
 	}
 }
 #tejas {
-	width: 80px;
-	height: 76px;
-	background: url("../img/tejas.png") no-repeat center center;
-	background-size: 80px 76px;
-	margin: 0 auto;
-	.pull-right;
+	.center-text;
+	font-size: 7em;
+	text-shadow: 0 -4px 0 #000;
 }
 .row {
 	margin-top: 3em;
@@ -101,6 +103,61 @@ header[role="banner"] {
 	.circle;
 	.portrait;
 	.box-sizing(border-box);
+}
+a.icon {
+	margin-bottom: -50px;
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// IcoMoon RMD Webfont Styles
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'RMD';
+	font-size: 1.5em;
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"]:before {
+*/
+.icon-twitter:before, .icon-rdio:before, .icon-instagram:before, .icon-dribbble:before, .icon-texas:before, .icon-aar:before, .icon-vine:before {
+	font-family: 'RMD';
+	font-size: 1.5em;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-twitter:before {
+	content: "\54";
+}
+.icon-rdio:before {
+	content: "\52";
+}
+.icon-instagram:before {
+	content: "\49";
+}
+.icon-dribbble:before {
+	content: "\44";
+}
+.icon-texas:before {
+	content: "\4a";
+}
+.icon-aar:before {
+	content: "\4c";
+}
+.icon-vine:before {
+	content: "\56";
 }
 
 

@@ -12,6 +12,9 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <!--[if lte IE 7]>
+      <script src="_/js/vendor/lte-ie7.js"></script>
+    <![endif]-->
     <!-- Touch icons -->
     <link href='_/img/favicon.ico' rel='shortcut icon'>
     <link href='_/img/apple-touch-icon-144-precomposed.png' rel='apple-touch-icon-precomposed' sizes='144x144'>
@@ -28,7 +31,7 @@
         <h1>Rick Messer Design</h1>
       </div>
     </header>
-    <div class='banner'>
+    <div class='banner' id='intro'>
       <div class='container'>
         <div class='row'>
           <div class='span3 center-text'>
@@ -39,9 +42,7 @@
               A designer in Austin. <br> Seeking companies that make life more fun & interesting.
             </h2>
           </div>
-          <div class='span3 center-text'>
-            <img src='http://placehold.it/180x180'>
-          </div>
+          <div class='span3 center-text' id='tejas'><span aria-hidden='true' data-icon='J'></span></div>
         </div>
       </div>
     </div>
@@ -183,7 +184,12 @@
           </div>
         </div>
         <footer class='summary'>
-          <p>Call Me On:</p>
+          <p>
+            Call Me On:
+            <a class='icon' href='https://twitter.com/rickmesser'><span aria-hidden='true' data-icon='T'></span></a>
+            <a class='icon' href='http://www.rdio.com/people/rickmesser/'><span aria-hidden='true' data-icon='R'></span></a>
+            <a class='icon' href='http://dribbble.com/rickmesser'><span aria-hidden='true' data-icon='D'></span></a>
+          </p>
         </footer>
       </div>
     </section>
