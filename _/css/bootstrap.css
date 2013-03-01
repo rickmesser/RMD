@@ -205,10 +205,10 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Droid Serif", "Times New Roman", Times, serif;
   font-size: 16px;
   line-height: 24px;
-  color: #333333;
+  color: rgba(255, 255, 255, 0.7);
   background-color: #ffffff;
 }
 a {
@@ -602,8 +602,8 @@ h4,
 h5,
 h6 {
   margin: 12px 0;
-  font-family: "Alike";
-  font-weight: bold;
+  font-family: "Droid Serif";
+  font-weight: normal;
   line-height: 24px;
   color: inherit;
   text-rendering: optimizelegibility;
@@ -618,19 +618,20 @@ h6 small {
   line-height: 1;
   color: #999999;
 }
-h1,
-h2,
 h3 {
   line-height: 48px;
 }
 h1 {
-  font-size: 44px;
+  font-size: 72px;
+  line-height: 72px;
 }
 h2 {
   font-size: 36px;
+  line-height: 48px;
 }
 h3 {
-  font-size: 28px;
+  font-size: 18px;
+  font-style: italic;
 }
 h4 {
   font-size: 20px;
@@ -640,6 +641,10 @@ h5 {
 }
 h6 {
   font-size: 13.6px;
+}
+h1,
+h2 {
+  text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.4);
 }
 h1 small {
   font-size: 28px;
@@ -662,6 +667,7 @@ ul,
 ol {
   padding: 0;
   margin: 0 0 12px 25px;
+  list-style: square;
 }
 ul ul,
 ul ol,
@@ -873,7 +879,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Droid Serif", "Times New Roman", Times, serif;
 }
 label {
   display: block;
@@ -1358,7 +1364,7 @@ select:focus:invalid:focus {
 }
 .help-block,
 .help-inline {
-  color: #595959;
+  color: rgba(255, 255, 255, 0.7);
 }
 .help-block {
   display: block;
@@ -5114,4 +5120,12 @@ a.badge:hover {
 }
 .affix {
   position: fixed;
+}
+.circle {
+  -webkit-border-radius: 90em;
+  -moz-border-radius: 90em;
+  border-radius: 90em;
+}
+.portrait {
+  border: 5px solid #d9d9d9;
 }

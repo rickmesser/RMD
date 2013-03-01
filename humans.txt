@@ -8,7 +8,7 @@
 # THANKS
 
     Paul Irish & HTML5 Boilerplate
-    @mdo & @fat for the glory of Twitter Bootstrap
+    @mdo & @fat for the glory of Bootstrap
     @monkeydobiz for HTML5 Reset
 
 # TECHNOLOGY COLOPHON

@@ -205,10 +205,10 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Droid Serif", "Times New Roman", Times, serif;
   font-size: 16px;
   line-height: 24px;
-  color: #333333;
+  color: rgba(255, 255, 255, 0.7);
   background-color: #ffffff;
 }
 a {
@@ -602,8 +602,8 @@ h4,
 h5,
 h6 {
   margin: 12px 0;
-  font-family: "Alike";
-  font-weight: bold;
+  font-family: "Droid Serif";
+  font-weight: normal;
   line-height: 24px;
   color: inherit;
   text-rendering: optimizelegibility;
@@ -618,19 +618,20 @@ h6 small {
   line-height: 1;
   color: #999999;
 }
-h1,
-h2,
 h3 {
   line-height: 48px;
 }
 h1 {
-  font-size: 44px;
+  font-size: 72px;
+  line-height: 72px;
 }
 h2 {
   font-size: 36px;
+  line-height: 48px;
 }
 h3 {
-  font-size: 28px;
+  font-size: 18px;
+  font-style: italic;
 }
 h4 {
   font-size: 20px;
@@ -640,6 +641,10 @@ h5 {
 }
 h6 {
   font-size: 13.6px;
+}
+h1,
+h2 {
+  text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.4);
 }
 h1 small {
   font-size: 28px;
@@ -662,6 +667,7 @@ ul,
 ol {
   padding: 0;
   margin: 0 0 12px 25px;
+  list-style: square;
 }
 ul ul,
 ul ol,
@@ -873,7 +879,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Droid Serif", "Times New Roman", Times, serif;
 }
 label {
   display: block;
@@ -1358,7 +1364,7 @@ select:focus:invalid:focus {
 }
 .help-block,
 .help-inline {
-  color: #595959;
+  color: rgba(255, 255, 255, 0.7);
 }
 .help-block {
   display: block;
@@ -1439,8 +1445,8 @@ select:focus:invalid:focus {
 }
 .input-append .active,
 .input-prepend .active {
-  background-color: #a9dba9;
-  border-color: #46a546;
+  background-color: #81e9c4;
+  border-color: #1fb27e;
 }
 .input-prepend .add-on,
 .input-prepend .btn {
@@ -5147,6 +5153,14 @@ a.badge:hover {
 .affix {
   position: fixed;
 }
+.circle {
+  -webkit-border-radius: 90em;
+  -moz-border-radius: 90em;
+  border-radius: 90em;
+}
+.portrait {
+  border: 5px solid #d9d9d9;
+}
 @font-face {
   font-family: '../fonts/BLOKKNeue-Regular';
   src: url('../fonts/BLOKKNeue-Regular.eot');
@@ -5154,25 +5168,44 @@ a.badge:hover {
   font-weight: normal;
   font-style: normal;
 }
-html {
-  -moz-box-shadow: inset 0 0 10em rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: inset 0 0 10em rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0 0 10em rgba(0, 0, 0, 0.5);
-  background: #edede7;
-}
 body {
-  background: url(../img/grid-pattern.png);
-  min-height: 1000px;
+  background: #2d2d2d;
+}
+header[role="banner"] {
+  background: #2d2d2d;
+  padding: 1em 2em;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  position: fixed;
 }
 .center-text {
   text-align: center;
 }
-#logo {
-  width: 75px;
-  height: 75px;
-  background: url("../img/logo.png");
-  background-size: 75px 75px;
-  margin: 0 auto;
+#brand img.logo {
+  width: 27px;
+  height: 27px;
+  float: left;
+  margin-right: 1em;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  -webkit-transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -o-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+}
+#brand img.logo:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#brand h1 {
+  font-size: 1.5em;
+  line-height: 1.2;
 }
 #tejas {
   width: 80px;
@@ -5182,16 +5215,40 @@ body {
   margin: 0 auto;
   float: right;
 }
-.banner {
-  background: #2d2d2d;
-  color: #ccccc7;
-  border: 1px solid white;
-  border-right: none;
-  border-left: none;
-}
 .row {
   margin-top: 3em;
   margin-bottom: 3em;
+}
+.container .banner {
+  padding: 3em 0;
+}
+.green-bg {
+  background: #1fb27e;
+}
+.purple-bg {
+  background: #ac74b3;
+}
+.yellow-bg {
+  background: #caa540;
+}
+.red-bg {
+  background: #c05032;
+}
+.semi-black {
+  background: rgba(0, 0, 0, 0.2);
+}
+.summary {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px 20px 15px 20px;
+}
+.face {
+  -webkit-border-radius: 90em;
+  -moz-border-radius: 90em;
+  border-radius: 90em;
+  border: 5px solid #d9d9d9;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .swipe {
   padding: 20px 0;

@@ -3,6 +3,16 @@
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Theme Colors
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+@darkBg: #2d2d2d;
+@green: #1fb27e;
+@purple: #ac74b3;
+@yellow: #caa540;
+@red: #c05032;
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Fonts
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -15,34 +25,41 @@
     font-weight: normal;
     font-style: normal;
 }
-
-
-html {
-	// .box-shadow(inset 0 0 145px rgba(0,0,0,.22));
-	-moz-box-shadow: inset 0 0 10em rgba(0,0,0,.5);
-	-webkit-box-shadow: inset 0 0 10em rgba(0,0,0,.5);
-	box-shadow: inset 0 0 10em rgba(0,0,0,.5);
-	background: #edede7;
-}
-
 body {
-	background: url(../img/grid-pattern.png);
-	min-height: 1000px;
+	background: @darkBg;
 }
-
+header[role="banner"] {
+	background: @darkBg;
+	padding: 1em 2em;
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	position: fixed;
+}
+// section[role="main"] {
+//     border:1px solid #ff0000;
+// }
 .center-text {
 	text-align: center;
-	// background: url(../img/glyphicons-halflings.png);
 }
-// .garbage {
-// 	font-family: "Alike";
-// }
-#logo {
-	width: 75px;
-	height: 75px;
-	background: url("../img/logo.png");
-	background-size: 75px 75px;
-	margin: 0 auto;
+#brand {
+	img.logo {
+		width: 27px;
+		height: 27px;
+		.pull-left;
+		margin-right: 1em;
+		.opacity(70);
+		.transition(all 0.75s ease);
+		&:hover {
+			.opacity(100);
+			.rotate(45deg);
+		}
+
+	}
+	h1 {
+		font-size: 1.5em;
+		line-height: 1.2;
+	}
 }
 #tejas {
 	width: 80px;
@@ -52,14 +69,39 @@ body {
 	margin: 0 auto;
 	.pull-right;
 }
-.banner {
-	background: #2d2d2d;
-	color: #ccccc7;
-	border: 1px solid white;
-	border-right: none;
-	border-left: none;
-}
 .row {
 	margin-top: 3em;
 	margin-bottom: 3em;
 }
+.container {
+	.banner {
+	padding: 3em 0;
+	}
+}
+.green-bg {
+	background: @green;
+}
+.purple-bg {
+	background: @purple;
+}
+.yellow-bg {
+	background: @yellow;
+}
+.red-bg {
+	background: @red;
+}
+.semi-black {
+	background: rgba(0,0,0,0.2);
+}
+.summary {
+	.semi-black;
+	padding: 20px 20px 15px 20px;
+}
+.face {
+	.circle;
+	.portrait;
+	.box-sizing(border-box);
+}
+
+
+
