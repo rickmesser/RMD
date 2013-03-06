@@ -5210,9 +5210,21 @@ header[role="banner"] {
   font-size: 1.5em;
   line-height: 1.2;
 }
+#web,
+#mobile,
+#brands {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#web {
+  background: url("../img/svg/browser.svg") center top no-repeat;
+  background-size: 100% 100%;
+  min-height: 330px;
+}
 #tejas {
   text-align: center;
-  font-size: 7em;
+  font-size: 90px;
   text-shadow: 0 -4px 0 #000000;
 }
 .row {
@@ -5242,6 +5254,7 @@ header[role="banner"] {
   padding: 20px 20px 15px 20px;
 }
 .face {
+  text-align: center;
   -webkit-border-radius: 90em;
   -moz-border-radius: 90em;
   border-radius: 90em;

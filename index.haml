@@ -23,25 +23,41 @@
     %header{:role => "banner"}
       #brand
         %a{:href => "#"}
-          %img.logo{:src => "_/img/logo.png"}/
+          %img.logo{:src => "_/img/svg/logo.svg"}/
         %h1 Rick Messer Design
     #intro.banner
       .container
         .row
           .span3.center-text
-            %img.face{:src => "_/img/ma-face.jpg"}
+            %img.face{:src => "_/img/ma-face.jpg"}/
           .span6
-            %h2
+            %h2#message
               A designer in Austin. <br> Seeking companies that make life more fun & interesting.
-          #tejas.span3.center-text
-            %span{"aria-hidden" => "true", "data-icon" => "J"}>
+          #tejas.span3
+            %span#tt{"aria-hidden" => "true", "data-icon" => "J"}>
+            / %object{:data => "_/img/svg/tejas.svg", :type => "image/svg+xml"}
 
     %section{:role => "main"}
       .banner.green-bg
         .container
           .row
             .span8.center-text
-              %img{:src => "http://placehold.it/590x330"}
+              #myCarousel.carousel.slide
+                %ol.carousel-indicators
+                  %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
+                  %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
+                  %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
+                / Carousel items
+                .carousel-inner
+                  .active.item
+                    %img{:src => "_/img/slides/web/dhe.jpg"}/
+                  .item
+                    %img{:src => "_/img/slides/web/dhe.jpg"}/
+                  .item
+                    %img{:src => "_/img/slides/web/dhe.jpg"}/
+                / Carousel nav
+                %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} &lsaquo;
+                %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} &rsaquo;
             .span4
               %h3
                 My approach to
@@ -115,7 +131,7 @@
                 %li Illustrator
                 %li InDesign
         %footer.summary
-          %p Brands & Such That Rule: 
+          %p Brands &amp; Such That Rule: 
       .banner.red-bg
         .container
           .row
@@ -146,6 +162,7 @@
               %span{"aria-hidden" => "true", "data-icon" => "D"}>
 
     %script{:src => "_/js/vendor/jquery-1.8.2.min.js"}
+    %script{:src => "_/js/vendor/jquery.fittext.js"}
     %script{:src => "_/js/plugins.js"}
     %script{:src => "_/js/bootstrap-transition.js"}
     %script{:src => "_/js/bootstrap-alert.js"}
