@@ -7,10 +7,14 @@
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 @darkBg: #2d2d2d;
+@softOrange: #ca7740;
 @green: #1fb27e;
 @purple: #ac74b3;
+@softGold: #b6a95f;
+@softBlue: #4aa4bb;
 @yellow: #caa540;
 @red: #c05032;
+@mint: #1fb27e;
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Fonts
@@ -32,11 +36,7 @@ body {
 }
 header[role="banner"] {
 	background: @darkBg;
-	padding: 1em 2em;
-	display: block;
 	box-sizing: border-box;
-	width: 100%;
-	position: fixed;
 }
 // section[role="main"] {
 //     border:1px solid #ff0000;
@@ -48,6 +48,7 @@ header[role="banner"] {
 	padding-top: 70px;
 }
 #brand {
+	padding: 1em;
 	img.logo {
 		width: 27px;
 		height: 27px;
@@ -59,50 +60,44 @@ header[role="banner"] {
 			.opacity(100);
 			.rotate(45deg);
 		}
-
 	}
 	h1 {
 		font-size: 1.5em;
-		line-height: 1.2;
+		line-height: .4;
 	}
 }
 #web, #mobile, #brands {
 	.box-sizing(border-box);
 }
-#web {
+#webernets {
 	background: url("../img/svg/browser.svg") center top no-repeat;
-	background-size: 100% 100%;
-	min-height: 330px;
+	background-size: cover;
+	.box-sizing(border-box);
 }
+
 #tejas {
 	.center-text;
 	font-size: 90px;
 	text-shadow: 0 -4px 0 #000;
 }
 .row {
-	margin-top: 3em;
-	margin-bottom: 3em;
+	margin-top: 7em;
+	margin-bottom: 7em;
 }
 .container {
 	.banner {
-	padding: 3em 0;
+	padding: 5em 0;
 	}
 }
-.green-bg {
-	background: @green;
-}
-.purple-bg {
-	background: @purple;
-}
-.yellow-bg {
-	background: @yellow;
-}
-.red-bg {
-	background: @red;
-}
-.semi-black {
-	background: rgba(0,0,0,0.2);
-}
+.green-bg { background: @green;}
+.purple-bg { background: @purple;}
+.yellow-bg { background: @yellow;}
+.red-bg {background: @red;}
+.semi-black { background: rgba(0,0,0,0.2);}
+.soft-orange-bg { background: @softOrange;}
+.soft-gold-bg { background: @softGold;}
+.soft-blue-bg { background: @softBlue;}
+.mint-bg {background: @mint;}
 .summary {
 	.semi-black;
 	padding: 20px 20px 15px 20px;
@@ -170,4 +165,18 @@ you can use the generic selector below, but it's slower:
 }
 
 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Bootstrap Specific Theme Styles
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.carousel {
+	.item {
+		a img {
+			.opacity(80);
+			.transition(opacity 0.75s ease);
+			&:hover {
+				.opacity(100);			
+			}
+		}
+	}
+}

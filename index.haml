@@ -20,7 +20,7 @@
     %link{:href => "_/img/apple-touch-icon-72-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}/
     %link{:href => "_/img/apple-touch-icon-57-precomposed.png", :rel => "apple-touch-icon-precomposed"}/
   %body
-    %header{:role => "banner"}
+    %header.navbar.navbar-fixed-top{:role => "banner"}
       #brand
         %a{:href => "#"}
           %img.logo{:src => "_/img/svg/logo.svg"}/
@@ -35,30 +35,45 @@
               A designer in Austin. <br> Seeking companies that make life more fun & interesting.
           #tejas.span3
             %span#tt{"aria-hidden" => "true", "data-icon" => "J"}>
-            / %object{:data => "_/img/svg/tejas.svg", :type => "image/svg+xml"}
-
     %section{:role => "main"}
-      .banner.green-bg
+      .banner.mint-bg
         .container
           .row
-            .span8.center-text
-              #myCarousel.carousel.slide
-                %ol.carousel-indicators
-                  %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
-                  %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
-                  %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
-                / Carousel items
+            .span7
+              #webCarousel.carousel.slide
                 .carousel-inner
                   .active.item
-                    %img{:src => "_/img/slides/web/dhe.jpg"}/
+                    %a{:href => "http://donedapper.com/"}
+                      %img{:src => "_/img/slides/web/dapper.jpg"}/
                   .item
-                    %img{:src => "_/img/slides/web/dhe.jpg"}/
+                    %a{:href => "http://www.deerhillexpeditions.com/"}
+                      %img{:src => "_/img/slides/web/dhe.jpg"}/
                   .item
-                    %img{:src => "_/img/slides/web/dhe.jpg"}/
-                / Carousel nav
-                %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} &lsaquo;
-                %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} &rsaquo;
-            .span4
+                    %a{:href => "http://fourelementslandscape.com/"}
+                      %img{:src => "_/img/slides/web/fourElements.jpg"}/
+                  .item
+                    %a{:href => "http://www.jkroofing.com/"}
+                      %img{:src => "_/img/slides/web/jk.jpg"}/
+                  .item
+                    %a{:href => "http://scenetap.com/"}
+                      %img{:src => "_/img/slides/web/scenetap.jpg"}/
+                  .item
+                    %a{:href => "http://rickmesser.com/clients/scinema/2011/homepage1.html"}
+                      %img{:src => "_/img/slides/web/scinema.jpg"}/
+                  .item
+                    %a{:href => "http://www.tapalytics.us/"}
+                      %img{:src => "_/img/slides/web/tapalytics.jpg"}/
+                / Web Carousel Items
+                %ol.carousel-indicators
+                  %li.active{"data-slide-to" => "0", "data-target" => "#webCarousel"}
+                  %li{"data-slide-to" => "1", "data-target" => "#webCarousel"}
+                  %li{"data-slide-to" => "2", "data-target" => "#webCarousel"}
+                  %li{"data-slide-to" => "3", "data-target" => "#webCarousel"}
+                  %li{"data-slide-to" => "4", "data-target" => "#webCarousel"}
+                  %li{"data-slide-to" => "5", "data-target" => "#webCarousel"}
+                  %li{"data-slide-to" => "6", "data-target" => "#webCarousel"}
+                / Web Carousel nav
+            .span4.offset1
               %h3
                 My approach to
               %h1
@@ -79,12 +94,40 @@
         %footer.summary
           %p Favorite Web Things: ShopTalk Show, SMACSS, CSS Hat, Chrome Inspector
 
-      .banner.purple-bg
+      .banner.soft-gold-bg
         .container
           .row
-            .span8.center-text
-              %img{:src => "http://placehold.it/590x330"}
-            .span4
+            .span7.center-text
+              #mobileCarousel.carousel.slide
+                .carousel-inner
+                  .active.item
+                    %img{:src => "_/img/slides/mobile/iphone-st-welcome.png"}/
+                  .item
+                    %img{:src => "_/img/slides/mobile/iphone-st-map-detail.png"}/
+                  .item
+                    %img{:src => "_/img/slides/mobile/iphone-st-listed.png"}/
+                  .item
+                    %img{:src => "_/img/slides/mobile/android-st-dashboard.png"}/
+                  .item
+                    %img{:src => "_/img/slides/mobile/android-st-comments.png"}/
+                  .item
+                    %img{:src => "_/img/slides/mobile/android-st-region.png"}/
+                  .item
+                    %img{:src => "_/img/slides/mobile/windows-fb-blue.png"}/
+                  .item
+                    %img{:src => "_/img/slides/mobile/windows-fb-pano.png"}/
+                / Mobile Carousel items
+                %ol.carousel-indicators
+                  %li.active{"data-slide-to" => "0", "data-target" => "#mobileCarousel"}
+                  %li{"data-slide-to" => "1", "data-target" => "#mobileCarousel"}
+                  %li{"data-slide-to" => "2", "data-target" => "#mobileCarousel"}
+                  %li{"data-slide-to" => "3", "data-target" => "#mobileCarousel"}
+                  %li{"data-slide-to" => "4", "data-target" => "#mobileCarousel"}
+                  %li{"data-slide-to" => "5", "data-target" => "#mobileCarousel"}
+                  %li{"data-slide-to" => "6", "data-target" => "#mobileCarousel"}
+                  %li{"data-slide-to" => "7", "data-target" => "#mobileCarousel"}
+                / Mobile Carousel nav
+            .span4.offset1
               %h3
                 My approach to
               %h1
@@ -107,7 +150,7 @@
           %p Favorite Apps: FourSquare, Vine, TimeHop, Path, Rdio, Instagram
 
 
-      .banner.yellow-bg
+      .banner.soft-blue-bg
         .container
           .row
             .span8.center-text

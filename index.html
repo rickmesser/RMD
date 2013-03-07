@@ -23,7 +23,7 @@
     <link href='_/img/apple-touch-icon-57-precomposed.png' rel='apple-touch-icon-precomposed'>
   </head>
   <body>
-    <header role='banner'>
+    <header class='navbar navbar-fixed-top' role='banner'>
       <div id='brand'>
         <a href='#'>
           <img class='logo' src='_/img/svg/logo.svg'>
@@ -42,40 +42,67 @@
               A designer in Austin. <br> Seeking companies that make life more fun & interesting.
             </h2>
           </div>
-          <div class='span3' id='tejas'><span aria-hidden='true' data-icon='J' id='tt'></span><!-- %object{:data => "_/img/svg/tejas.svg", :type => "image/svg+xml"} -->
-          </div>
+          <div class='span3' id='tejas'><span aria-hidden='true' data-icon='J' id='tt'></span></div>
         </div>
       </div>
     </div>
     <section role='main'>
-      <div class='banner green-bg'>
+      <div class='banner mint-bg'>
         <div class='container'>
           <div class='row'>
-            <div class='span8 center-text'>
-              <div class='carousel slide' id='myCarousel'>
-                <ol class='carousel-indicators'>
-                  <li class='active' data-slide-to='0' data-target='#myCarousel'></li>
-                  <li data-slide-to='1' data-target='#myCarousel'></li>
-                  <li data-slide-to='2' data-target='#myCarousel'></li>
-                </ol>
-                <!-- Carousel items -->
+            <div class='span7'>
+              <div class='carousel slide' id='webCarousel'>
                 <div class='carousel-inner'>
                   <div class='active item'>
-                    <img src='_/img/slides/web/dhe.jpg'>
+                    <a href='http://donedapper.com/'>
+                      <img src='_/img/slides/web/dapper.jpg'>
+                    </a>
                   </div>
                   <div class='item'>
-                    <img src='_/img/slides/web/dhe.jpg'>
+                    <a href='http://www.deerhillexpeditions.com/'>
+                      <img src='_/img/slides/web/dhe.jpg'>
+                    </a>
                   </div>
                   <div class='item'>
-                    <img src='_/img/slides/web/dhe.jpg'>
+                    <a href='http://fourelementslandscape.com/'>
+                      <img src='_/img/slides/web/fourElements.jpg'>
+                    </a>
+                  </div>
+                  <div class='item'>
+                    <a href='http://www.jkroofing.com/'>
+                      <img src='_/img/slides/web/jk.jpg'>
+                    </a>
+                  </div>
+                  <div class='item'>
+                    <a href='http://scenetap.com/'>
+                      <img src='_/img/slides/web/scenetap.jpg'>
+                    </a>
+                  </div>
+                  <div class='item'>
+                    <a href='http://rickmesser.com/clients/scinema/2011/homepage1.html'>
+                      <img src='_/img/slides/web/scinema.jpg'>
+                    </a>
+                  </div>
+                  <div class='item'>
+                    <a href='http://www.tapalytics.us/'>
+                      <img src='_/img/slides/web/tapalytics.jpg'>
+                    </a>
                   </div>
                 </div>
-                <!-- Carousel nav -->
-                <a class='carousel-control left' data-slide='prev' href='#myCarousel'>&lsaquo;</a>
-                <a class='carousel-control right' data-slide='next' href='#myCarousel'>&rsaquo;</a>
+                <!-- Web Carousel Items -->
+                <ol class='carousel-indicators'>
+                  <li class='active' data-slide-to='0' data-target='#webCarousel'></li>
+                  <li data-slide-to='1' data-target='#webCarousel'></li>
+                  <li data-slide-to='2' data-target='#webCarousel'></li>
+                  <li data-slide-to='3' data-target='#webCarousel'></li>
+                  <li data-slide-to='4' data-target='#webCarousel'></li>
+                  <li data-slide-to='5' data-target='#webCarousel'></li>
+                  <li data-slide-to='6' data-target='#webCarousel'></li>
+                </ol>
+                <!-- Web Carousel nav -->
               </div>
             </div>
-            <div class='span4'>
+            <div class='span4 offset1'>
               <h3>
                 My approach to
               </h3>
@@ -105,13 +132,52 @@
           <p>Favorite Web Things: ShopTalk Show, SMACSS, CSS Hat, Chrome Inspector</p>
         </footer>
       </div>
-      <div class='banner purple-bg'>
+      <div class='banner soft-gold-bg'>
         <div class='container'>
           <div class='row'>
-            <div class='span8 center-text'>
-              <img src='http://placehold.it/590x330'>
+            <div class='span7 center-text'>
+              <div class='carousel slide' id='mobileCarousel'>
+                <div class='carousel-inner'>
+                  <div class='active item'>
+                    <img src='_/img/slides/mobile/iphone-st-welcome.png'>
+                  </div>
+                  <div class='item'>
+                    <img src='_/img/slides/mobile/iphone-st-map-detail.png'>
+                  </div>
+                  <div class='item'>
+                    <img src='_/img/slides/mobile/iphone-st-listed.png'>
+                  </div>
+                  <div class='item'>
+                    <img src='_/img/slides/mobile/android-st-dashboard.png'>
+                  </div>
+                  <div class='item'>
+                    <img src='_/img/slides/mobile/android-st-comments.png'>
+                  </div>
+                  <div class='item'>
+                    <img src='_/img/slides/mobile/android-st-region.png'>
+                  </div>
+                  <div class='item'>
+                    <img src='_/img/slides/mobile/windows-fb-blue.png'>
+                  </div>
+                  <div class='item'>
+                    <img src='_/img/slides/mobile/windows-fb-pano.png'>
+                  </div>
+                </div>
+                <!-- Mobile Carousel items -->
+                <ol class='carousel-indicators'>
+                  <li class='active' data-slide-to='0' data-target='#mobileCarousel'></li>
+                  <li data-slide-to='1' data-target='#mobileCarousel'></li>
+                  <li data-slide-to='2' data-target='#mobileCarousel'></li>
+                  <li data-slide-to='3' data-target='#mobileCarousel'></li>
+                  <li data-slide-to='4' data-target='#mobileCarousel'></li>
+                  <li data-slide-to='5' data-target='#mobileCarousel'></li>
+                  <li data-slide-to='6' data-target='#mobileCarousel'></li>
+                  <li data-slide-to='7' data-target='#mobileCarousel'></li>
+                </ol>
+                <!-- Mobile Carousel nav -->
+              </div>
             </div>
-            <div class='span4'>
+            <div class='span4 offset1'>
               <h3>
                 My approach to
               </h3>
@@ -142,7 +208,7 @@
           <p>Favorite Apps: FourSquare, Vine, TimeHop, Path, Rdio, Instagram</p>
         </footer>
       </div>
-      <div class='banner yellow-bg'>
+      <div class='banner soft-blue-bg'>
         <div class='container'>
           <div class='row'>
             <div class='span8 center-text'>
