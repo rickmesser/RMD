@@ -5462,6 +5462,26 @@ you can use the generic selector below, but it's slower:
 .icon-vine:before {
   content: "\56";
 }
+.regridual-container {
+  width: 100%;
+}
+.regridual-container .regridual-row {
+  width: 100%;
+  *zoom: 1;
+}
+.regridual-container .regridual-row:before,
+.regridual-container .regridual-row:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.regridual-container .regridual-row:after {
+  clear: both;
+}
+.regridual-container .regridual-row .regridual-third {
+  width: 29.62963%;
+  margin-right: 0.37037037%;
+}
 .carousel .item a img {
   opacity: 0.8;
   filter: alpha(opacity=80);
