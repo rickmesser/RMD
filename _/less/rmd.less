@@ -169,12 +169,36 @@ you can use the generic selector below, but it's slower:
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .regridual-container {
 	width: 100%;
+	background: rgba(255,255,255,0.2);
 	.regridual-row {
+		margin-top: 20px;
 		width: 100%;
 		.clearfix();
-		.regridual-third {
-			width: 29.62963%;
-			margin-right: 0.37037037%
+		.box-sizing(border-box);
+		&:first-child {
+			margin-top: 0;
+		}
+		.regridual-third-col {
+			float: left;
+			.box-sizing(border-box);
+			width: 31.343284%;
+			margin-left: 2.9850746%;
+			*margin-left: 2.92315018%;
+		    &:first-child {
+		    	margin-left: 0;
+		    }
+		}
+	}
+}
+
+// Portfolio Images
+
+.regridual-container {
+	a img {
+		.opacity(60);
+		.transition(opacity 0.75s ease);
+		&:hover {
+			.opacity(100);			
 		}
 	}
 }
@@ -194,3 +218,27 @@ you can use the generic selector below, but it's slower:
 		}
 	}
 }
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Media Queries
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\
+@media (min-width: 1200px) {
+
+}
+@media (min-width: 768px) and (max-width: 979px) {
+	.regridual-container {
+		.regridual-row {
+			margin-top: 14px;
+		}
+	}
+}
+@media (max-width: 767px) {
+
+}
+@media (max-width: 480px) {
+	.regridual-container {
+		.regridual-row {
+			margin-top: 10px;
+		}
+	}
+}
+
