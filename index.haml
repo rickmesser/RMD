@@ -10,9 +10,7 @@
     %link{:href => "_/css/responsive.css", :rel => "stylesheet"}/
     %link{:href => "http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic", :rel => "stylesheet", :type => "text/css"}/
     /[if lt IE 9]
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    /[if lte IE 7] 
-      <script src="_/js/vendor/lte-ie7.js"></script>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     / Touch icons
     %link{:href => "_/img/favicon.ico", :rel => "shortcut icon"}/
     %link{:href => "_/img/apple-touch-icon-144-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "144x144"}/
@@ -32,7 +30,7 @@
             %img.face{:src => "_/img/ma-face.jpg"}/
           .span6
             %h2#message
-              A designer in Austin. <br> Seeking companies that make life more fun & interesting.
+              A designer in Austin. <br> Seeking companies that make life more fun &amp; interesting.
           #tejas.span3
             %span#tt{"aria-hidden" => "true", "data-icon" => "J"}>
     %section{:role => "main"}
@@ -149,36 +147,36 @@
         .container
           .row
             .span7
-              .regridual-container
+              .regridual-container#gallery{"data-target" => "#modal-gallery", "data-toggle" => "modal-gallery"}
                 .regridual-row
-                  .regridual-third-col
-                    %a{:href => "#"}
+                  .regridual-third-col  
+                    %a{"data-gallery" => "gallery", :href => "_/img/branding/dapper-large.jpg", :title => "Dapper"}
                       %img{:src => "_/img/branding/thumbs/dapper-thumb.jpg"}/
                   .regridual-third-col
-                    %a{:href => "#"}
+                    %a{"data-gallery" => "gallery", :href => "_/img/branding/shift-large.jpg", :title => "Shift"}
                       %img{:src => "_/img/branding/thumbs/shift-thumb.jpg"}/
                   .regridual-third-col
-                    %a{:href => "#"}  
+                    %a{"data-gallery" => "gallery", :href => "_/img/branding/trailMark-large.jpg", :title => "Trail Mark"}  
                       %img{:src => "_/img/branding/thumbs/trailMark-thumb.jpg"}/
                 .regridual-row
                   .regridual-third-col
-                    %a{:href => "#"}
+                    %a{"data-gallery" => "gallery", :href => "_/img/branding/amc-large.jpg", :title => "Austin Motor Club"}
                       %img{:src => "_/img/branding/thumbs/amc-thumb.jpg"}/
                   .regridual-third-col
-                    %a{:href => "#"}
+                    %a{"data-gallery" => "gallery", :href => "_/img/branding/sceneTap-large.jpg", :title => "SceneTap"}
                       %img{:src => "_/img/branding/thumbs/sceneTap-thumb.jpg"}/
                   .regridual-third-col
-                    %a{:href => "#"}
+                    %a{"data-gallery" => "gallery", :href => "_/img/branding/stangAholics-large.jpg", :title => "Stang-Aholics"}
                       %img{:src => "_/img/branding/thumbs/stangAholics-thumb.jpg"}/
                 .regridual-row
                   .regridual-third-col
-                    %a{:href => "#"}
+                    %a{"data-gallery" => "gallery", :href => "_/img/branding/scinema-large.jpg", :title => "Scinema"}
                       %img{:src => "_/img/branding/thumbs/scinema-thumb.jpg"}/
                   .regridual-third-col
-                    %a{:href => "#"}
+                    %a{"data-gallery" => "gallery", :href => "_/img/branding/rrs-large.jpg", :title => "Red Rocks Sports T-Shirts"}
                       %img{:src => "_/img/branding/thumbs/rrs-thumb.jpg"}/
                   .regridual-third-col
-                    %a{:href => "#"}
+                    %a{"data-gallery" => "gallery", :href => "_/img/branding/americanCampusPoster-large.jpg", :title => "The American Campus Show Poster"}
                       %img{:src => "_/img/branding/thumbs/americanCampusPoster-thumb.jpg"}/
 
             .span4.offset1
@@ -187,7 +185,7 @@
               %ul.unstyled
                 %li Establish Uses
                 %li Design for 1-color applicationsv
-                %li Memorable & Timeless Marks
+                %li Memorable &amp; Timeless Marks
                 %li In-person presentations
                 %li Environmental presentations 
                 %li Designed in a grid to break
@@ -207,7 +205,7 @@
               %h3 Please Do
               %h1 Call Me
               %p You can also email, I just didn’t want to put “Contact” as the title of this section... That’s lame.
-              %p I don’t even think my phone number is on this site actually....
+              %p I don’t even think my phone number is on this site actually&hellip;
               %h3 Tools of Choice:
               %ul
                 %li Twitter
@@ -224,8 +222,28 @@
             %a.icon{:href => "http://dribbble.com/rickmesser"}
               %span{"aria-hidden" => "true", "data-icon" => "D"}>
 
+    / modal-gallery is the modal dialog used for the image gallery
+    #modal-gallery.modal.modal-gallery.hide.fade{:tabindex => "-1"}
+      .modal-header
+        %a.close{"data-dismiss" => "modal"} &times;
+        %h3.modal-title
+      .modal-body
+        .modal-image
+      .modal-footer
+        %a.btn.modal-download{:target => "_blank"}
+          %i.icon-download
+          %span Download
+        %a.btn.btn-success.modal-play.modal-slideshow{"data-slideshow" => "5000"}
+          %i.icon-play.icon-white
+          %span Slideshow
+        %a.btn.btn-info.modal-prev
+          %i.icon-arrow-left.icon-white
+          %span Previous
+        %a.btn.btn-primary.modal-next
+          %span Next
+          %i.icon-arrow-right.icon-white
+
     %script{:src => "_/js/vendor/jquery-1.8.2.min.js"}
-    %script{:src => "_/js/vendor/jquery.fittext.js"}
     %script{:src => "_/js/plugins.js"}
     %script{:src => "_/js/bootstrap-transition.js"}
     %script{:src => "_/js/bootstrap-alert.js"}
@@ -239,5 +257,7 @@
     %script{:src => "_/js/bootstrap-collapse.js"}
     %script{:src => "_/js/bootstrap-carousel.js"}
     %script{:src => "_/js/bootstrap-typeahead.js"}
-    %script{:src => "_/js/vendor/swipe.js"}
+    %script{:src => "_/js/vendor/jquery.fittext.js"}
+    %script{:src => "_/js/vendor/load-image.min.js"}
+    %script{:src => "_/js/vendor/bootstrap-image-gallery.min.js"}
     %script{:src => "_/js/main.js"}
