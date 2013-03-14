@@ -17,10 +17,10 @@
     %link{:href => "_/img/apple-touch-icon-114-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "114x114"}/
     %link{:href => "_/img/apple-touch-icon-72-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}/
     %link{:href => "_/img/apple-touch-icon-57-precomposed.png", :rel => "apple-touch-icon-precomposed"}/
-  %body
+  %body#top
     %header.navbar.navbar-fixed-top{:role => "banner"}
       #brand
-        %a{:href => "#"}
+        %a{:href => "#top"}
           %img.logo{:src => "_/img/svg/logo.svg"}/
         %h1 Rick Messer Design
     #intro.banner
@@ -30,7 +30,7 @@
             %img.face{:src => "_/img/ma-face.jpg"}/
           .span6
             %h2#message
-              A designer in Austin. <br> Seeking companies that make life more fun &amp; interesting.
+              A designer in Austin. <br> Making life more fun &amp; interesting.
           #tejas.span3
             %span#tt{"aria-hidden" => "true", "data-icon" => "J"}>
     %section{:role => "main"}
@@ -108,10 +108,6 @@
                     %img{:src => "_/img/slides/mobile/android-st-comments.png"}/
                   .item
                     %img{:src => "_/img/slides/mobile/android-st-region.png"}/
-                  .item
-                    %img{:src => "_/img/slides/mobile/windows-fb-blue.png"}/
-                  .item
-                    %img{:src => "_/img/slides/mobile/windows-fb-pano.png"}/
                 / Mobile Carousel items
                 %ol.carousel-indicators
                   %li.active{"data-slide-to" => "0", "data-target" => "#mobileCarousel"}
@@ -120,8 +116,6 @@
                   %li{"data-slide-to" => "3", "data-target" => "#mobileCarousel"}
                   %li{"data-slide-to" => "4", "data-target" => "#mobileCarousel"}
                   %li{"data-slide-to" => "5", "data-target" => "#mobileCarousel"}
-                  %li{"data-slide-to" => "6", "data-target" => "#mobileCarousel"}
-                  %li{"data-slide-to" => "7", "data-target" => "#mobileCarousel"}
                 / Mobile Carousel nav
             .span4.offset1
               %h3 My approach to

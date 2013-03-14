@@ -55,6 +55,14 @@ $(function () {
     });
 });
 
+// Scroll-to custom JS Animation
+$('#brand a').bind('click', function(e) {
+   e.preventDefault();
+   $('html, body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+
+   // edit: Opera requires the "html" elm. animated
+});
+
 // Swipe Elements
 
 // new Swipe(document.getElementById('slider'));
