@@ -72,4 +72,4 @@ $('#brand a').bind('click', function(e) {
 
 // FitText 
 $("#tt").fitText(1.1, { minFontSize: '100px', maxFontSize: '200px' });
-$("#message").fitText(1.1, { minFontSize: '16px', maxFontSize: '36px' });
+$("#message").fitText(1.1, { minFontSize: '16px', maxFontSize: '56px' });
