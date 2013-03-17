@@ -30,7 +30,7 @@
             %img.face{:src => "_/img/ma-face.jpg"}/
           .span6
             %h2#message
-              A designer in Austin. <br> Making life more fun &amp; interesting.
+              A designer in Austin. <br> Making life more fun &amp; interesting. <br> This is how I do stuff.
           #tejas.span3
             %span#tt{"aria-hidden" => "true", "data-icon" => "J"}>
     %section{:role => "main"}
@@ -195,24 +195,24 @@
           .row
             .span7
               %form#form1.wufoo.topLabel.page{:action => "https://rickmesser.wufoo.com/forms/z7x3p3/#public", :autocomplete => "off", :enctype => "multipart/form-data", :method => "post", :name => "form1", :novalidate => ""}
-              #foli1.notranslate
-                %legend{:for => "Field1"}
-                  And you are ... ?
-                %input#Field1.input-block-level{:name => "Field1", :required => "", :tabindex => "1", :type => "text", :value => "", :placeholder =>"First"}/
-                %br
-                %input#Field2.input-block-level{:name => "Field2", :required => "", :tabindex => "2", :type => "text", :value => "", :placeholder =>"Last"}/
-              #foli3.notranslate
-                %input#Field3.input-block-level{:maxlength => "255", :name => "Field3", :required => "", :spellcheck => "false", :tabindex => "3", :type => "email", :value => "", :placeholder =>"Email"}/
-              #foli4.notranslate
-                %input#Field4.input-block-level{:maxlength => "255", :name => "Field4", :onkeyup => "", :tabindex => "4", :type => "text", :value => "", :placeholder =>"Your company is ..."}/
-              #foli5.notranslate
-                %input#Field5.input-block-level{:maxlength => "255", :name => "Field5", :onkeyup => "", :required => "", :tabindex => "5", :type => "text", :value => "", :placeholder =>"What should we talk about?"}/
-              %button.btn.btn-large.btn-block{:name => "saveForm", :type => "submit", :value => "submit"}
-                Boom
-              .hide
-                %label{:for => "comment"} Do Not Fill This Out
-                %textarea#comment{:cols => "1", :name => "comment", :rows => "1"}
-                %input#idstamp{:name => "idstamp", :type => "hidden", :value => "RWw3DfcmlbEHMpcetuaoLgcQuB/7Ssz2/ZTvhhVVtow="}/
+                %header#header.info
+                  %h2 RMD Website Inquiry Form
+                #foli1.notranslate
+                  %label#title3.desc{:for => "Field1"}
+                    And you are...?
+                  %input.input-block-level{:name => "Field1", :required => "", :size => "8", :tabindex => "1", :type => "text", :value => "", :placeholder => "First Name"}/
+                  %input.input-block-level{:name => "Field2", :required => "", :size => "14", :tabindex => "2", :type => "text", :value => "", :placeholder => "Last Name"}/
+                #foli3.notranslate
+                  %input.input-block-level{:maxlength => "255", :name => "Field3", :required => "", :spellcheck => "false", :tabindex => "3", :type => "email", :value => "", :placeholder => "Email"}/
+                #foli4.notranslate
+                  %input.input-block-level{:maxlength => "255", :name => "Field4", :onkeyup => "", :tabindex => "4", :type => "text", :value => "", :placeholder => "Your Company Is...?"}/
+                #foli5.notranslate
+                  %input.input-block-level{:maxlength => "255", :name => "Field5", :onkeyup => "", :required => "", :tabindex => "5", :type => "text", :value => "", :placeholder => "What should we talk about?"}/
+                %input#saveForm.btTxt.submit.btn.btn-block{:name => "saveForm", :type => "submit", :value => "Submit"}/
+                %li.hide
+                  %label{:for => "comment"} Do Not Fill This Out
+                  %textarea#comment{:cols => "1", :name => "comment", :rows => "1"}
+                  %input#idstamp{:name => "idstamp", :type => "hidden", :value => "RWw3DfcmlbEHMpcetuaoLgcQuB/7Ssz2/ZTvhhVVtow="}/
             .span4.offset1
               %h3 Please Do
               %h1 Call Me
@@ -272,4 +272,5 @@
     %script{:src => "_/js/vendor/jquery.fittext.js"}
     %script{:src => "_/js/vendor/load-image.min.js"}
     %script{:src => "_/js/vendor/bootstrap-image-gallery.min.js"}
+    %script{:src => "_/js/vendor/wufoo.js"}
     %script{:src => "_/js/main.js"}
