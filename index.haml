@@ -30,7 +30,9 @@
             %img.face{:src => "_/img/ma-face.jpg"}/
           .span6
             %h2#message
-              A designer in Austin. <br> Making life more fun &amp; interesting. <br> This is how I do stuff.
+              A designer in Austin. <br> Making life more fun &amp; interesting.
+            %h3#lead-in
+              This is how I do stuff &hellip;
           #tejas.span3
             %span#tt{"aria-hidden" => "true", "data-icon" => "J"}>
     %section{:role => "main"}
@@ -40,26 +42,26 @@
             .span7
               #webCarousel.carousel.slide
                 .carousel-inner
-                  .active.item
-                    %a{:href => "http://donedapper.com/"}
+                  .item.active
+                    %a{:href => "http://donedapper.com/", :target => "_blank"}
                       %img{:src => "_/img/slides/web/dapper.jpg"}/
                   .item
-                    %a{:href => "http://www.deerhillexpeditions.com/"}
-                      %img{:src => "_/img/slides/web/dhe.jpg"}/
-                  .item
-                    %a{:href => "http://fourelementslandscape.com/"}
-                      %img{:src => "_/img/slides/web/fourElements.jpg"}/
-                  .item
-                    %a{:href => "http://www.jkroofing.com/"}
-                      %img{:src => "_/img/slides/web/jk.jpg"}/
-                  .item
-                    %a{:href => "http://scenetap.com/"}
+                    %a{:href => "http://scenetap.com/", :target => "_blank"}
                       %img{:src => "_/img/slides/web/scenetap.jpg"}/
                   .item
-                    %a{:href => "http://rickmesser.com/clients/scinema/2011/homepage1.html"}
+                    %a{:href => "http://www.deerhillexpeditions.com/", :target => "_blank"}
+                      %img{:src => "_/img/slides/web/dhe.jpg"}/
+                  .item
+                    %a{:href => "http://fourelementslandscape.com/", :target => "_blank"}
+                      %img{:src => "_/img/slides/web/fourElements.jpg"}/
+                  .item
+                    %a{:href => "http://www.jkroofing.com/", :target => "_blank"}
+                      %img{:src => "_/img/slides/web/jk.jpg"}/
+                  .item
+                    %a{:href => "http://rickmesser.com/clients/scinema/2011/homepage1.html", :target => "_blank"}
                       %img{:src => "_/img/slides/web/scinema.jpg"}/
                   .item
-                    %a{:href => "http://www.tapalytics.us/"}
+                    %a{:href => "http://www.tapalytics.us/", :target => "_blank"}
                       %img{:src => "_/img/slides/web/tapalytics.jpg"}/
                 / Web Carousel Items
                 %ol.carousel-indicators
@@ -82,7 +84,7 @@
               %h3
                 Tools of Choice:
               %ul
-                %li Sublime Text
+                %li Sublime Text 2
                 %li Photoshop
                 %li Bootstrap
                 %li GitHub
@@ -96,7 +98,7 @@
             .span7
               #mobileCarousel.carousel.slide
                 .carousel-inner
-                  .active.item
+                  .item.active
                     %img{:src => "_/img/slides/mobile/iphone-st-welcome.png"}/
                   .item
                     %img{:src => "_/img/slides/mobile/iphone-st-map-detail.png"}/
@@ -178,7 +180,7 @@
               %h1 Brands &amp; Such
               %ul.unstyled
                 %li Establish Uses
-                %li Design for 1-color applicationsv
+                %li Design for 1-color applications
                 %li Memorable &amp; Timeless Marks
                 %li In-person presentations
                 %li Environmental presentations 
@@ -196,7 +198,7 @@
             .span7
               %form#form1.wufoo.topLabel.page{:action => "https://rickmesser.wufoo.com/forms/z7x3p3/#public", :autocomplete => "off", :enctype => "multipart/form-data", :method => "post", :name => "form1", :novalidate => ""}
                 %header#header.info
-                  %h2 RMD Website Inquiry Form
+                  %h3 Inquiries
                 #foli1.notranslate
                   %label#title3.desc{:for => "Field1"}
                     And you are...?
@@ -208,7 +210,7 @@
                   %input.input-block-level{:maxlength => "255", :name => "Field4", :onkeyup => "", :tabindex => "4", :type => "text", :value => "", :placeholder => "Your Company Is...?"}/
                 #foli5.notranslate
                   %input.input-block-level{:maxlength => "255", :name => "Field5", :onkeyup => "", :required => "", :tabindex => "5", :type => "text", :value => "", :placeholder => "What should we talk about?"}/
-                %input#saveForm.btTxt.submit.btn.btn-block{:name => "saveForm", :type => "submit", :value => "Submit"}/
+                %input#saveForm.btTxt.submit.btn.btn-primary.btn-block{:name => "saveForm", :type => "submit", :value => "Submit"}/
                 %li.hide
                   %label{:for => "comment"} Do Not Fill This Out
                   %textarea#comment{:cols => "1", :name => "comment", :rows => "1"}
@@ -241,19 +243,6 @@
         %h3.modal-title
       .modal-body
         .modal-image
-      .modal-footer
-        %a.btn.modal-download{:target => "_blank"}
-          %i.icon-download
-          %span Download
-        %a.btn.btn-success.modal-play.modal-slideshow{"data-slideshow" => "5000"}
-          %i.icon-play.icon-white
-          %span Slideshow
-        %a.btn.btn-info.modal-prev
-          %i.icon-arrow-left.icon-white
-          %span Previous
-        %a.btn.btn-primary.modal-next
-          %span Next
-          %i.icon-arrow-right.icon-white
 
     %script{:src => "_/js/vendor/jquery-1.8.2.min.js"}
     %script{:src => "_/js/plugins.js"}

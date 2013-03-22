@@ -208,15 +208,15 @@ body {
   font-family: "Droid Serif", "Times New Roman", Times, serif;
   font-size: 16px;
   line-height: 24px;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.8);
   background-color: #ffffff;
 }
 a {
-  color: rgba(0, 0, 0, 0.5);
+  color: #2d2d2d;
   text-decoration: none;
 }
 a:hover {
-  color: rgba(217, 217, 217, 0.7);
+  color: rgba(217, 217, 217, 0.8);
   text-decoration: underline;
 }
 .img-rounded {
@@ -634,7 +634,7 @@ h6 small {
 }
 h1 {
   font-size: 72px;
-  line-height: 72px;
+  line-height: 1.1;
 }
 h2 {
   font-size: 36px;
@@ -1411,7 +1411,7 @@ select:focus:invalid:focus {
 }
 .help-block,
 .help-inline {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.8);
 }
 .help-block {
   display: block;
@@ -2482,14 +2482,14 @@ table th[class*="span"],
 .dropdown-submenu:focus > a {
   text-decoration: none;
   color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.5);
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-color: #282828;
+  background-image: -moz-linear-gradient(top, #2d2d2d, #202020);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2d2d2d), to(#202020));
+  background-image: -webkit-linear-gradient(top, #2d2d2d, #202020);
+  background-image: -o-linear-gradient(top, #2d2d2d, #202020);
+  background-image: linear-gradient(to bottom, #2d2d2d, #202020);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#80000000', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2d2d2d', endColorstr='#ff202020', GradientType=0);
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -2497,14 +2497,14 @@ table th[class*="span"],
   color: #ffffff;
   text-decoration: none;
   outline: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-color: #282828;
+  background-image: -moz-linear-gradient(top, #2d2d2d, #202020);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2d2d2d), to(#202020));
+  background-image: -webkit-linear-gradient(top, #2d2d2d, #202020);
+  background-image: -o-linear-gradient(top, #2d2d2d, #202020);
+  background-image: linear-gradient(to bottom, #2d2d2d, #202020);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#80000000', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2d2d2d', endColorstr='#ff202020', GradientType=0);
 }
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,
@@ -2655,7 +2655,7 @@ table th[class*="span"],
 }
 .close {
   float: right;
-  font-size: 20px;
+  font-size: 2.5em;
   font-weight: bold;
   line-height: 24px;
   color: #000000;
@@ -2829,17 +2829,17 @@ input[type="button"].btn-block {
 .btn-primary {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: rgba(0, 0, 0, 0.5);
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-color: #2d2d2d;
+  background-image: -moz-linear-gradient(top, #2d2d2d, #2d2d2d);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2d2d2d), to(#2d2d2d));
+  background-image: -webkit-linear-gradient(top, #2d2d2d, #2d2d2d);
+  background-image: -o-linear-gradient(top, #2d2d2d, #2d2d2d);
+  background-image: linear-gradient(to bottom, #2d2d2d, #2d2d2d);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#80000000', GradientType=0);
-  border-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2d2d2d', endColorstr='#ff2d2d2d', GradientType=0);
+  border-color: #2d2d2d #2d2d2d #070707;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: rgba(0, 0, 0, 0.5);
+  *background-color: #2d2d2d;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -2851,12 +2851,12 @@ input[type="button"].btn-block {
 .btn-primary.disabled,
 .btn-primary[disabled] {
   color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.5);
-  *background-color: rgba(0, 0, 0, 0.5);
+  background-color: #2d2d2d;
+  *background-color: #202020;
 }
 .btn-primary:active,
 .btn-primary.active {
-  background-color: rgba(0, 0, 0, 0.5) \9;
+  background-color: #141414 \9;
 }
 .btn-warning {
   color: #ffffff;
@@ -3055,14 +3055,14 @@ input[type="submit"].btn.btn-mini {
 .btn-link {
   border-color: transparent;
   cursor: pointer;
-  color: rgba(0, 0, 0, 0.5);
+  color: #2d2d2d;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: rgba(217, 217, 217, 0.7);
+  color: rgba(217, 217, 217, 0.8);
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3203,7 +3203,7 @@ input[type="submit"].btn.btn-mini {
   background-color: #e6e6e6;
 }
 .btn-group.open .btn-primary.dropdown-toggle {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #2d2d2d;
 }
 .btn-group.open .btn-warning.dropdown-toggle {
   background-color: #f89406;
@@ -3396,7 +3396,7 @@ input[type="submit"].btn.btn-mini {
 .nav-list > .active > a:focus {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #2d2d2d;
 }
 .nav-list [class^="icon-"],
 .nav-list [class*=" icon-"] {
@@ -3479,7 +3479,7 @@ input[type="submit"].btn.btn-mini {
 .nav-pills > .active > a:hover,
 .nav-pills > .active > a:focus {
   color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #2d2d2d;
 }
 .nav-stacked > li {
   float: none;
@@ -3534,14 +3534,14 @@ input[type="submit"].btn.btn-mini {
   border-radius: 6px;
 }
 .nav .dropdown-toggle .caret {
-  border-top-color: rgba(0, 0, 0, 0.5);
-  border-bottom-color: rgba(0, 0, 0, 0.5);
+  border-top-color: #2d2d2d;
+  border-bottom-color: #2d2d2d;
   margin-top: 6px;
 }
 .nav .dropdown-toggle:hover .caret,
 .nav .dropdown-toggle:focus .caret {
-  border-top-color: rgba(217, 217, 217, 0.7);
-  border-bottom-color: rgba(217, 217, 217, 0.7);
+  border-top-color: rgba(217, 217, 217, 0.8);
+  border-bottom-color: rgba(217, 217, 217, 0.8);
 }
 /* move down carets for tabs */
 .nav-tabs .dropdown-toggle .caret {
@@ -4408,15 +4408,15 @@ input[type="submit"].btn.btn-mini {
   bottom: 0;
   left: 0;
   z-index: 1040;
-  background-color: #000000;
+  background-color: #4aa4bb;
 }
 .modal-backdrop.fade {
   opacity: 0;
 }
 .modal-backdrop,
 .modal-backdrop.fade.in {
-  opacity: 0.8;
-  filter: alpha(opacity=80);
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .modal {
   position: fixed;
@@ -4746,7 +4746,7 @@ input[type="submit"].btn.btn-mini {
 }
 a.thumbnail:hover,
 a.thumbnail:focus {
-  border-color: rgba(0, 0, 0, 0.5);
+  border-color: #2d2d2d;
   -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
@@ -5152,13 +5152,16 @@ a.badge:hover {
 .carousel-indicators li {
   display: block;
   float: left;
-  width: 10px;
-  height: 10px;
-  margin-left: 5px;
+  width: 1em;
+  height: 1em;
+  margin-left: .5em;
   text-indent: -999px;
   background-color: #ccc;
   background-color: rgba(255, 255, 255, 0.25);
-  border-radius: 5px;
+  border-radius: 3em;
+}
+.carousel-indicators li:hover {
+  cursor: pointer;
 }
 .carousel-indicators .active {
   background-color: #fff;
@@ -5338,6 +5341,10 @@ header[role="banner"] {
 }
 #brand h1 {
   font-size: 1.5em;
+  line-height: .4;
+}
+#brand h3 {
+  font-size: 1.1em;
   line-height: .4;
 }
 #web,
@@ -5558,9 +5565,6 @@ you can use the generic selector below, but it's slower:
   max-height: none;
   outline: none;
 }
-.modal-gallery.fade.in {
-  top: 50%;
-}
 .modal-gallery .modal-body {
   max-height: none;
 }
@@ -5577,9 +5581,26 @@ you can use the generic selector below, but it's slower:
   overflow: hidden;
   cursor: pointer;
 }
+.modal-gallery .modal-image *.in {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.modal-gallery .modal-image {
+  background: url(../img/loading.gif) center no-repeat;
+}
+.modal-gallery .modal-header h3 {
+  color: #adadad;
+  font-size: 1.1em;
+}
+.modal-gallery .modal-image * {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
 .modal-gallery .modal-image:hover:before,
 .modal-gallery .modal-image:hover:after {
-  content: '\2039';
+  content: url(../img/svg/larr.svg);
   position: absolute;
   top: 50%;
   left: 15px;
@@ -5590,50 +5611,31 @@ you can use the generic selector below, but it's slower:
   font-weight: 100;
   line-height: 30px;
   text-align: center;
-  background: #222222;
-  border: 3px solid #ffffff;
-  -webkit-border-radius: 23px;
-  -moz-border-radius: 23px;
-  border-radius: 23px;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
   z-index: 1;
 }
 .modal-gallery .modal-image:hover:after {
-  content: '\203A';
+  content: url(../img/svg/rarr.svg);
   left: auto;
   right: 15px;
+}
+.modal-gallery.fade.in {
+  top: 50%;
 }
 .modal-single .modal-image:hover:before,
 .modal-single .modal-image:hover:after {
   display: none;
 }
-.modal-loading .modal-image {
-  background: url(../img/loading.gif) center no-repeat;
-}
 .modal-gallery.fade .modal-image {
   -webkit-transition: width 0.15s ease, height 0.15s ease;
   -moz-transition: width 0.15s ease, height 0.15s ease;
-  -ms-transition: width 0.15s ease, height 0.15s ease;
   -o-transition: width 0.15s ease, height 0.15s ease;
   transition: width 0.15s ease, height 0.15s ease;
-}
-.modal-gallery .modal-image * {
-  position: absolute;
-  top: 0;
-  opacity: 0;
-  filter: alpha(opacity=0);
 }
 .modal-gallery.fade .modal-image * {
   -webkit-transition: opacity 0.5s linear;
   -moz-transition: opacity 0.5s linear;
-  -ms-transition: opacity 0.5s linear;
   -o-transition: opacity 0.5s linear;
   transition: opacity 0.5s linear;
-}
-.modal-gallery .modal-image *.in {
-  opacity: 1;
-  filter: alpha(opacity=100);
 }
 .modal-fullscreen {
   border: none;
@@ -5643,14 +5645,18 @@ you can use the generic selector below, but it's slower:
   background: transparent;
   overflow: hidden;
 }
+.modal-fullscreen .modal-body {
+  padding: 0;
+}
+.modal-fullscreen .modal-footer {
+  top: auto;
+  bottom: 0;
+}
 .modal-fullscreen.modal-loading {
   border: 0;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-}
-.modal-fullscreen .modal-body {
-  padding: 0;
 }
 .modal-fullscreen .modal-header,
 .modal-fullscreen .modal-footer {
@@ -5664,11 +5670,8 @@ you can use the generic selector below, but it's slower:
   -moz-box-shadow: none;
   box-shadow: none;
   opacity: 0;
+  filter: alpha(opacity=0);
   z-index: 2000;
-}
-.modal-fullscreen .modal-footer {
-  top: auto;
-  bottom: 0;
 }
 .modal-fullscreen .close,
 .modal-fullscreen .modal-title {
