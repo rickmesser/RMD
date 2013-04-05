@@ -3847,7 +3847,7 @@ input[type="submit"].btn.btn-mini {
   position: fixed;
   right: 0;
   left: 0;
-  z-index: 1030;
+  z-index: 1051;
   margin-bottom: 0;
 }
 .navbar-fixed-top .navbar-inner,
@@ -5542,6 +5542,24 @@ you can use the generic selector below, but it's slower:
 @media (max-width: 480px) {
   .regridual-container .regridual-row {
     margin-top: 10px;
+  }
+}
+@media (max-height: 720px) {
+  .row {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+}
+@media (min-height: 721px) and (max-height: 1000px) {
+  .row {
+    margin-top: 10em;
+    margin-bottom: 10em;
+  }
+}
+@media (min-height: 1001px) {
+  .row {
+    margin-top: 15em;
+    margin-bottom: 15em;
   }
 }
 .swipe {

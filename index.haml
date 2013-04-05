@@ -40,6 +40,52 @@
         .container
           .row
             .span7
+              #mobileCarousel.carousel.slide
+                .carousel-inner
+                  .item.active
+                    %img{:src => "_/img/slides/mobile/iphone-st-welcome.png"}/
+                  .item
+                    %img{:src => "_/img/slides/mobile/iphone-st-map-detail.png"}/
+                  .item
+                    %img{:src => "_/img/slides/mobile/iphone-st-listed.png"}/
+                  .item
+                    %img{:src => "_/img/slides/mobile/android-st-dashboard.png"}/
+                  .item
+                    %img{:src => "_/img/slides/mobile/android-st-comments.png"}/
+                  .item
+                    %img{:src => "_/img/slides/mobile/android-st-region.png"}/
+                / Mobile Carousel items
+                %ol.carousel-indicators
+                  %li.active{"data-slide-to" => "0", "data-target" => "#mobileCarousel"}
+                  %li{"data-slide-to" => "1", "data-target" => "#mobileCarousel"}
+                  %li{"data-slide-to" => "2", "data-target" => "#mobileCarousel"}
+                  %li{"data-slide-to" => "3", "data-target" => "#mobileCarousel"}
+                  %li{"data-slide-to" => "4", "data-target" => "#mobileCarousel"}
+                  %li{"data-slide-to" => "5", "data-target" => "#mobileCarousel"}
+                / Mobile Carousel nav
+            .span4.offset1
+              %h3 My approach to
+              %h1 Mobile
+              %ul.unstyled
+                %li Extensive UX planning
+                %li Pixel-perfect design for all states
+                %li Vector &amp; repeatable assets
+                %li Photoshop Layer &amp; Type Styles
+                %li PSD Layer Comps
+                %li Work with developers before, during and after hand-off 
+              %h3 Tools of Choice:
+              %ul
+                %li Photoshop
+                %li Skala Preview
+                %li Keynote for Wireframes
+                %li GUI Assets from Teehan + Lax
+        %footer.summary
+          %p Favorite Apps: FourSquare, Vine, TimeHop, Path, Rdio, Instagram
+
+      .banner.soft-gold-bg
+        .container
+          .row
+            .span7
               #webCarousel.carousel.slide
                 .carousel-inner
                   .item.active
@@ -91,53 +137,6 @@
                 %li IcoMoon
         %footer.summary
           %p Favorite Web Things: ShopTalk Show, SMACSS, CSS Hat, Chrome Inspector
-
-      .banner.soft-gold-bg
-        .container
-          .row
-            .span7
-              #mobileCarousel.carousel.slide
-                .carousel-inner
-                  .item.active
-                    %img{:src => "_/img/slides/mobile/iphone-st-welcome.png"}/
-                  .item
-                    %img{:src => "_/img/slides/mobile/iphone-st-map-detail.png"}/
-                  .item
-                    %img{:src => "_/img/slides/mobile/iphone-st-listed.png"}/
-                  .item
-                    %img{:src => "_/img/slides/mobile/android-st-dashboard.png"}/
-                  .item
-                    %img{:src => "_/img/slides/mobile/android-st-comments.png"}/
-                  .item
-                    %img{:src => "_/img/slides/mobile/android-st-region.png"}/
-                / Mobile Carousel items
-                %ol.carousel-indicators
-                  %li.active{"data-slide-to" => "0", "data-target" => "#mobileCarousel"}
-                  %li{"data-slide-to" => "1", "data-target" => "#mobileCarousel"}
-                  %li{"data-slide-to" => "2", "data-target" => "#mobileCarousel"}
-                  %li{"data-slide-to" => "3", "data-target" => "#mobileCarousel"}
-                  %li{"data-slide-to" => "4", "data-target" => "#mobileCarousel"}
-                  %li{"data-slide-to" => "5", "data-target" => "#mobileCarousel"}
-                / Mobile Carousel nav
-            .span4.offset1
-              %h3 My approach to
-              %h1 Mobile
-              %ul.unstyled
-                %li Extensive UX planning
-                %li Pixel-perfect design for all states
-                %li Vector &amp; repeatable assets
-                %li Photoshop Layer &amp; Type Styles
-                %li PSD Layer Comps
-                %li Work with developers before, during and after hand-off 
-              %h3 Tools of Choice:
-              %ul
-                %li Photoshop
-                %li Skala Preview
-                %li Keynote for Wireframes
-                %li GUI Assets from Teehan + Lax
-        %footer.summary
-          %p Favorite Apps: FourSquare, Vine, TimeHop, Path, Rdio, Instagram
-
 
       .banner.soft-blue-bg
         .container
